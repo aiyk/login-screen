@@ -22,6 +22,7 @@ const resetPass = () => {
     if (!email) {
         document.getElementById("errMsg").innerHTML = "Kindly supply your email";
         document.getElementById("err").style.display = "flex";
+        document.getElementById("success").style.display = "none";
     } else {
         document.getElementById("err").style.display = "none";
         document.getElementById("btn").style.display = "none";
@@ -33,6 +34,7 @@ const resetPass = () => {
 
 const forgotPass = () => {
     document.getElementById("err").style.display = "none";
+    document.getElementById("success").style.display = "none";
     document.getElementById("login").style.display = "none";
     document.getElementById("resetFrm").style.display = "block";
     document.getElementById("title").innerHTML = "Forgot your password?";
@@ -40,6 +42,7 @@ const forgotPass = () => {
 
 const login = () => {
     document.getElementById("err").style.display = "none";
+    document.getElementById("success").style.display = "none";
     document.getElementById("login").style.display = "block";
     document.getElementById("resetFrm").style.display = "none";
     document.getElementById("title").innerHTML = "Login";
