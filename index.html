@@ -27,12 +27,12 @@
             <div class="bodywrap__form-logo">
                 <img src="./assets/client-logo.jpg" />
             </div>
-            <div class="bodywrap__form__title">Login</div>
+            <div id="title" class="bodywrap__form__title">Login</div>
             <div id="err" class="err">
                 <img src="./assets/icons/error-red.svg" />
-                <span>Username or password is incorrect</span>
+                <span id="errMsg">Username or password is incorrect</span>
             </div>
-            <form class="form">
+            <form id="login" class="form">
                 <div class="form__input-wrap">
                     <label>E-MAIL</label>
                     <input id="username" type="email" placeholder="something@example.com" />
@@ -43,7 +43,21 @@
                 </div>
                 <div class="form__cta-wrap">
                     <div onclick="submit()" class="btn btn-blue">Login</div>
-                    <div class="btn btn-outlineless-blue">Forgot password</div>
+                    <div onclick="forgotPass()" class="btn btn-outlineless-blue">Forgot password</div>
+                </div>
+            </form>
+            <form id="resetFrm" class="form">
+                <div class="bodywrap__bg-text">
+                    Happens! Just tell us the email you registered with instanta, and we will will send you an email to
+                    change it.
+                </div>
+                <div class="form__input-wrap">
+                    <label>E-MAIL</label>
+                    <input id="email" type="email" placeholder="something@example.com" />
+                </div>
+                <div class="form__cta-wrap">
+                    <div onclick="resetPass()" class="btn btn-blue">Send email</div>
+                    <div onclick="login()" class="btn btn-outlineless-blue">Login</div>
                 </div>
             </form>
         </div>
