@@ -189,4 +189,7 @@ input:focus {
   .bodywrap__form__title{
     text-align: left;
   }
+  .form__cta-wrap{
+    margin-top: 5rem;
+  }
 }
