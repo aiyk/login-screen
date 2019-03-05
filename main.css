@@ -186,4 +186,7 @@ input:focus {
     width: 100%;
     text-align: center;
   }
+  .bodywrap__form__title{
+    text-align: left;
+  }
 }
