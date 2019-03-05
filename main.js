@@ -1,9 +1,3 @@
-let sections = {
-    login: true,
-    forgetPass: false,
-    resetSuccess: false
-}
-
 let userData = {
     username: "aiyk",
     password: "pass123"
@@ -15,8 +9,10 @@ const submit = () => {
 
     if (username != userData.username || password != userData.password) {
         document.getElementById("err").style.display = "flex";
+        document.getElementById("success").style.display = "none";
     } else {
         document.getElementById("err").style.display = "none";
+        document.getElementById("success").style.display = "flex";
     }
 }
 
@@ -28,6 +24,10 @@ const resetPass = () => {
         document.getElementById("err").style.display = "flex";
     } else {
         document.getElementById("err").style.display = "none";
+        document.getElementById("btn").style.display = "none";
+        document.getElementById("emailInput").style.display = "none";
+        document.getElementById("title").innerHTML = "Check your email to complete your password reset";
+        document.getElementById("subTitle").innerHTML = "If " + email + " has been registered with instanta, you will find a password reset email sent to you";
     }
 }
 
