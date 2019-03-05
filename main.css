@@ -162,3 +162,28 @@ input:focus {
 #resetFrm{
   display: none;
 }
+
+@media only screen and (max-width: 940px) {
+  .bodywrap__bg{
+    padding-left: 5rem;
+  }
+  .bodywrap__form{
+    padding: 5rem;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .bodywrap__bg{
+    display: none;
+  }
+  .bodywrap__form{
+    padding: 2rem;
+  }
+  .bodywrap__form-logo {
+    display: flex;
+    justify-content: center;
+  }
+  .bodywrap__form__title{
+    width: 100%;
+    text-align: center;
+  }
+}
