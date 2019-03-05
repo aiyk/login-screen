@@ -34,6 +34,7 @@ const resetPass = () => {
 
 const forgotPass = () => {
     document.getElementById("err").style.display = "none";
+    document.getElementById("inputErr").innerHTML = "";
     document.getElementById("success").style.display = "none";
     document.getElementById("login").style.display = "none";
     document.getElementById("btn").style.display = "block";
