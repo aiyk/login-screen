@@ -20,8 +20,8 @@ const resetPass = () => {
     let email = document.getElementById("email").value;
 
     if (!email) {
-        document.getElementById("errMsg").innerHTML = "Kindly supply your email";
-        document.getElementById("err").style.display = "flex";
+        document.getElementById("inputErr").innerHTML = "We cannot do this without your email";
+        document.getElementById("err").style.display = "none";
         document.getElementById("success").style.display = "none";
     } else {
         document.getElementById("err").style.display = "none";

@@ -159,6 +159,11 @@ input:focus {
 .notify-err img, .notify-success img{
   margin-right: 1rem;
 }
+.input-err{
+  color: var(--red);
+  font-size: 1.2rem;
+  margin-top: .4rem;
+}
 #resetFrm{
   display: none;
 }
