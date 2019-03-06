@@ -72,6 +72,7 @@ ul {
 }
 .form{
   margin-top: 2rem;
+  animation: moveInLeft 1s ease-out;
 }
 .bodywrap__form__title{
     font-size: 3.5rem;
@@ -80,6 +81,7 @@ ul {
     margin-top: 7rem;
     margin-bottom: 1rem;
     line-height: 1.2;
+    animation: moveInRight 1s ease-out;
 }
 .form__input-wrap{
   margin-top: 2rem;
@@ -166,6 +168,33 @@ input:focus {
 }
 #resetFrm{
   display: none;
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  80% {
+    transform: translateX(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  80% {
+    transform: translateX(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 @media only screen and (max-width: 940px) {
