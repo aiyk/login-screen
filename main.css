@@ -145,6 +145,7 @@ input:focus {
   align-items: center;
   padding: .5rem;
   font-size: 1.4rem;
+  animation: moveInLeft 1s ease-out;
 }
 .notify-err{
   background: rgba(255, 4, 4, 0.09);
@@ -165,6 +166,7 @@ input:focus {
   color: var(--red);
   font-size: 1.2rem;
   margin-top: .4rem;
+  animation: moveInRight 1s ease-out;
 }
 #resetFrm{
   display: none;
