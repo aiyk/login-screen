@@ -13,58 +13,74 @@
 
 <body>
     <div class="bodywrap">
-        <div class="bodywrap__bg">
-            <div class="bodywrap__bg-logo">
-                <img src="./assets/instanta-logo.svg" />
-            </div>
-            <div class="bodywrap__bg-text">
-                <div>For every minute spent</div>
-                <div>in organizing, an hour is earned.</div>
-                <span>Benjamin Franklin</span>
+        <div class="bodywrap__bg bodywrap__wrap--lhs">
+            <div class="bodywrap__bg__wrap">
+                <div class="bodywrap__bg-logo">
+                    <img src="./assets/instanta-logo.svg" />
+                </div>
+                <div class="bodywrap__bg-text">
+                    <div>For every minute spent</div>
+                    <div>in organizing, an hour is earned.</div>
+                    <span>Benjamin Franklin</span>
+                </div>
             </div>
         </div>
-        <div class="bodywrap__form">
-            <div class="bodywrap__form-logo">
-                <img src="./assets/client-logo.jpg" />
-            </div>
-            <div id="title" class="bodywrap__form__title">Login</div>
-            <div id="err" class="notify notify-err">
-                <img src="./assets/icons/warning-triangle-red.svg" />
-                <span id="errMsg">Username or password is incorrect</span>
-            </div>
-            <div id="success" class="notify notify-success">
-                <img src="./assets/icons/check-circular-green.svg" />
-                <span id="successMsg">Logged in successfully</span>
-            </div>
-            <form id="login" class="form">
-                <div class="form__input-wrap">
-                    <label>E-MAIL</label>
-                    <input id="username" type="email" placeholder="something@example.com" />
+        <div class="bodywrap__bg bodywrap__form">
+            <div class="img__wrap">
+                <div class="logo__mobile__pre">
+                    <div class="bodywrap__bg-logo--mobile">
+                        <img src="./assets/instanta-logo.svg" />
+                    </div>
                 </div>
-                <div class="form__input-wrap">
-                    <label>PASSWORD</label>
-                    <input id="password" type="password" placeholder="something you only know" />
+            </div>
+            <div id="login" class="bodywrap__bg__wrap">
+                <div class="client--logo">
+                    <img src="./assets/client-logo.svg" />
+                    <div class="bodywrap__form-logo__label">Fieldco</div>
+                </div>
+                <div id="title" class="bodywrap__form__title">Login</div>
+                <div>
+                    <div id="err" class="notify notify-err">
+                        <img src="./assets/icons/warning-triangle-red.svg" />
+                        <span id="errMsg">Username or password is incorrect</span>
+                    </div>
+                    <div id="success" class="notify notify-success">
+                        <img src="./assets/icons/check-circular-green.svg" />
+                        <span id="successMsg">Logged in successfully</span>
+                    </div>
+                    <form class="form">
+                        <div class="form__input-wrap">
+                            <label>E-MAIL</label>
+                            <input id="username" type="email" placeholder="something@example.com" />
+                        </div>
+                        <div class="form__input-wrap">
+                            <label>PASSWORD</label>
+                            <input id="password" type="password" placeholder="something you only know" />
+                        </div>
+                    </form>
                 </div>
                 <div class="form__cta-wrap">
                     <div onclick="submit()" class="btn btn-blue">Login</div>
                     <div onclick="forgotPass()" class="btn btn-outlineless-blue">Forgot password</div>
                 </div>
-            </form>
-            <form id="resetFrm" class="form">
+            </div>
+            <div id="resetFrm" class="bodywrap__bg__wrap">
                 <div id="subTitle" class="bodywrap__bg-text">
                     Happens! Just tell us the email you registered with instanta, and we will will send you an email to
                     change it.
                 </div>
-                <div id="emailInput" class="form__input-wrap">
-                    <label>E-MAIL</label>
-                    <input id="email" type="email" placeholder="something@example.com" />
-                    <div id="inputErr" class="input-err"></div>
-                </div>
+                <form class="form">
+                    <div id="emailInput" class="form__input-wrap">
+                        <label>E-MAIL</label>
+                        <input id="email" type="email" placeholder="something@example.com" />
+                        <div id="inputErr" class="input-err"></div>
+                    </div>
+                </form>
                 <div class="form__cta-wrap">
                     <div id="btn" onclick="resetPass()" class="btn btn-blue">Send email</div>
                     <div onclick="login()" class="btn btn-outlineless-blue">Login</div>
                 </div>
-            </form>
+            </div>
         </div>
     </div>
 </body>

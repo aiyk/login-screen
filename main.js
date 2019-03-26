@@ -39,14 +39,14 @@ const forgotPass = () => {
     document.getElementById("login").style.display = "none";
     document.getElementById("btn").style.display = "block";
     document.getElementById("emailInput").style.display = "block";
-    document.getElementById("resetFrm").style.display = "block";
+    document.getElementById("resetFrm").style.display = "flex";
     document.getElementById("title").innerHTML = "Forgot your password?";
 }
 
 const login = () => {
     document.getElementById("err").style.display = "none";
     document.getElementById("success").style.display = "none";
-    document.getElementById("login").style.display = "block";
+    document.getElementById("login").style.display = "flex";
     document.getElementById("resetFrm").style.display = "none";
     document.getElementById("title").innerHTML = "Login";
 }
